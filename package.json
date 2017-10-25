@@ -14,7 +14,7 @@
     "angurjs",
     "todo"
   ],
-  "author": "Liam Cafearo",
+  "author": "Liam Cafearo <lcafearo@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/liam-cafearo/angular-todo/issues"
