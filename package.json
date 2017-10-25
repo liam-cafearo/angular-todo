@@ -1,0 +1,23 @@
+{
+  "name": "angular-todo",
+  "version": "1.0.0",
+  "description": "todo application created with angularjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liam-cafearo/angular-todo.git"
+  },
+  "keywords": [
+    "angurjs",
+    "todo"
+  ],
+  "author": "Liam Cafearo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liam-cafearo/angular-todo/issues"
+  },
+  "homepage": "https://github.com/liam-cafearo/angular-todo#readme"
+}
