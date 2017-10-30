@@ -11,7 +11,6 @@ angular.module('RouteControllers', [])
 				$scope.token = results.data.token;
 				store.set('username', $scope.registrationUser.username);
 				store.set('authToken', $scope.token);
-				console.log($scope.token);
 			}).catch(function(err) {
 				console.log(err.data);
 			});
@@ -28,8 +27,7 @@ angular.module('RouteControllers', [])
 					$scope.login();
 				}).catch(function(err) {
 					alert("Oops! Something went wrong!");
-					console.log(err);
 				});
 			}
-		}
+		};
 	});
