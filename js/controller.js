@@ -50,6 +50,10 @@ angular.module('RouteControllers', [])
 			}
 		}
 	})
+	.controller('LogoutController', function(store) {
+		store.remove('username');
+		store.remove('authToken');
+	})
 	.controller('TodoController', function($scope, $location, TodoAPIService, store) {
 		var URL = "https://morning-castle-91468.herokuapp.com/";
 
@@ -57,6 +61,10 @@ angular.module('RouteControllers', [])
 		$scope.username = store.get('username');
 
 		$scope.todos = [];
+
+		if (!store.get('authToken')) {
+			$location.path("/");
+		}
 
 		TodoAPIService.getTodos(URL + "todo/", $scope.username, $scope.authToken).then(function(results) {
 			$scope.todos = results.data || [];

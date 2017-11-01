@@ -5,7 +5,7 @@ angular.module('UserService', [])
 			callAPI: function(url, data) {
 				return $http.post(url, data)
 			}
-		};
+		}
 		return UserAPIService;
 	});
 
