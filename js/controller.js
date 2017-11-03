@@ -104,7 +104,7 @@ angular.module('RouteControllers', [])
 		TodoAPIService.getTodos(URL + "todo/" + id, $scope.username, store.get('authToken')).then(function(results) {
 			$scope.todo = results.data;
 		}).catch(function(err) {
-			condsole.log(err);
+			console.log(err);
 		});
 
 		$scope.submitForm = function() {
